@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Loops - break</title>
+</head>
+<body>
+   <h1>Hello</h1>
+   
+   <script>
+       
+       const MIN = 0;
+       const MAX = 20;
+       var testNum = 7;
+       var i = 1;
+       
+       while(MAX) {
+           let randomNum = Math.floor(Math.random()*(MAX-MIN));
+           if(randomNum == testNum){
+               break;
+           }
+           console.log('Round ' + i + ': ' + randomNum);
+           i++;
+       }
+       console.log('The computer guessed '+ i + ' times before finding ' + testNum);
+       
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script defer src="scripts/theTest.js"></script>
+    
+    <title>The Test</title>
+</head>
+<body>
+   <header class="mainHead">
+       <h1>How fast and accuratedly can you type?</h1>
+   </header>
+   <main>
+       <article class="intro">
+           <p>This is a test, just a test. Your goal is to duplicate the text that is provided and make sure you are accurate. Your test is timed, the timer starts as soon as you begin typing. Make sure to match everything. Good luck and may the force be with you.</p>
+       </article>
+       <section class="testArea">
+           <div id="origText">
+               <p>This this</p>
+           </div>
+           
+           <div class="testWrapper">
+           <textarea name="textArea" id="testArea" cols="30" placeholder="The clock starts as soon as you type"></textarea></div>
+           
+           <div class="tInfo">
+               <section id="clock">
+                   <div class="timer">00:00:00</div>
+               </section>
+               <button id="reset">Start over</button>
+           </div>
+           
+       </section><!-- testArea -->
+   </main>
+    
+</body>
+</html>

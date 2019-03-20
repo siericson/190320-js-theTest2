@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Loop through arrays</title>
+    
+<!--
+    <style>
+        a[href^="http"] {
+            color: red;
+        }
+    </style>
+-->
+</head>
+<body>
+   <h1>Hello, this is a page about looping</h1>
+<!--   nav>ul>li*7>a[href="loops1.html"]{Link $}-->
+   <nav>
+       <ul>
+           <li><a href="loops1.html">Link 1</a></li>
+           <li><a href="loops1.html">Link 2</a></li>
+           <li><a href="loops1.html">Link 3</a></li>
+           <li><a href="loops1.html">Link 4</a></li>
+           <li><a href="loops1.html">Link 5</a></li>
+           <li><a href="loops1.html">Link 6</a></li>
+           <li><a href="loops1.html">Link 7</a></li>
+       </ul>
+   </nav>
+   
+<!--   section>article*4>h4{Subhead $}+a[href="http://www.bbb.com"]{Link $}-->
+   <section>
+       <article>
+           <h4>Subhead 1</h4>
+           <a href="http://www.google.com">Link 1</a>
+       </article>
+       <article>
+           <h4>Subhead 2</h4>
+           <a href="http://www.cnn.com">Link 2</a>
+       </article>
+       <article>
+           <h4>Subhead 3</h4>
+           <a href="http://www.apple.com" target="_blank">Link 3</a>
+       </article>
+       <article>
+           <h4>Subhead 4</h4>
+           <a href="http://www.yahoo.com">Link 4</a>
+       </article>
+   </section>
+   
+   <script>
+       var extLinks = document.querySelectorAll('a[href^="http"]');
+       console.log(extLinks);
+       
+       for (var i=0; i<extLinks.length; i++){
+//           console.log(extLinks[i]);
+           
+           if(!extLinks[i].hasAttribute('target')) {
+               console.log(extLinks[i]);
+               extLinks[i].setAttribute('target','_blank');
+           }
+       }
+       
+       
+    </script>
+    
+</body>
+</html>
